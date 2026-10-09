@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rook Los Angeles - Internal Affairs Bureau</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#0B132B',
+                            900: '#070B19',
+                        },
+                        gold: {
+                            500: '#D4AF37',
+                            600: '#AA820A',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased">
+
+    <!-- Top Banner -->
+    <div class="bg-navy-900 text-slate-400 text-xs py-1 px-4 border-b border-slate-800 flex justify-between items-center">
+        <span><i class="fa-solid font-bold text-gold-500 mr-2">FAITHFULNESS • INTEGRITY • ACCOUNTABILITY</i></span>
+        <span>ROOK LA PROFESSIONAL STANDARDS BUREAU</span>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="bg-navy-800 border-b-2 border-gold-500 sticky top-0 z-50 shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <!-- Badge / Logo -->
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-gold-500 text-navy-900 flex items-center justify-center rounded-full font-bold shadow-md border-2 border-slate-200">
+                    <i class="fa-solid fa-shield-halved text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-black tracking-wider text-slate-100 uppercase">Rook L.A. Internal Affairs</h1>
+                    <p class="text-xs text-gold-500 uppercase tracking-widest font-semibold">Professional Standards Bureau</p>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-6 text-sm uppercase tracking-wider font-semibold">
+                <a href="#divisions" class="hover:text-gold-500 transition-colors">Divisions</a>
+                <a href="#roster" class="hover:text-gold-500 transition-colors">Staff Roster</a>
+                <a href="#stats" class="hover:text-gold-500 transition-colors">Transparency</a>
+                <a href="#file-complaint" class="bg-gold-500 hover:bg-gold-600 text-navy-900 px-4 py-2 rounded font-bold transition-all shadow">
+                    File Complaint / Commendation
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-navy-900 via-slate-900 to-navy-900 py-20 border-b border-slate-800">
+        <div class="max-w-5xl mx-auto text-center px-4">
+            <div class="inline-block bg-navy-800 border border-gold-500 text-gold-500 px-3 py-1 text-xs uppercase tracking-widest rounded-full mb-4">
+                Official Oversight Portal
+            </div>
+            <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-white">
+                Upholding Public Trust & Integrity
+            </h2>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-8">
+                The Internal Affairs Group (IAG) conducts impartial, objective administrative and criminal investigations into alleged misconduct involving personnel within the Rook Los Angeles jurisdiction.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#file-complaint" class="bg-red-700 hover:bg-red-800 text-white font-bold px-6 py-3 rounded shadow-lg transition">
+                    <i class="fa-solid fa-triangle-exclamation mr-2"></i> Report Misconduct
+                </a>
+                <a href="#divisions" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-6 py-3 rounded transition">
+                    Explore Bureau Units
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divisions / Units Section -->
+    <section id="divisions" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h3 class="text-2xl font-bold uppercase tracking-wider text-slate-100">Bureau Organization</h3>
+            <div class="w-16 h-1 bg-gold-500 mx-auto mt-2"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- AID -->
+            <div class="bg-slate-800/80 border border-slate-700 p-6 rounded-lg shadow-md hover:border-gold-500 transition">
+                <div class="text-gold-500 text-3xl mb-4"><i class="fa-solid fa-file-signature"></i></div>
+                <h4 class="text-xl font-bold mb-2">Administrative Investigation Division (AID)</h4>
+                <p class="text-sm text-slate-400">
+                    Responsible for investigating non-criminal complaints regarding departmental policy breaches, procedural failures, and administrative misconduct.
+                </p>
+            </div>
+
+            <!-- CID -->
+            <div class="bg-slate-800/80 border border-slate-700 p-6 rounded-lg shadow-md hover:border-gold-500 transition">
+                <div class="text-gold-500 text-3xl mb-4"><i class="fa-solid fa-handcuffs"></i></div>
+                <h4 class="text-xl font-bold mb-2">Criminal Investigation Division (CID)</h4>
+                <p class="text-sm text-slate-400">
+                    Handles allegations of potential criminal activity committed by sworn or civilian personnel, coordinating directly with local prosecutors.
+                </p>
+            </div>
+
+            <!-- FID -->
+            <div class="bg-slate-800/80 border border-slate-700 p-6 rounded-lg shadow-md hover:border-gold-500 transition">
+                <div class="text-gold-500 text-3xl mb-4"><i class="fa-solid fa-gun"></i></div>
+                <h4 class="text-xl font-bold mb-2">Force Investigation Division (FID)</h4>
+                <p class="text-sm text-slate-400">
+                    Investigates all Categorical Use of Force incidents, officer-involved shootings (OIS), and critical in-custody incidents.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Misconduct Reporting Form -->
+    <section id="file-complaint" class="py-16 bg-navy-900 border-t border-b border-slate-800">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="bg-slate-800 border border-slate-700 rounded-lg p-8 shadow-2xl">
+                <div class="flex items-center space-x-3 mb-6">
+                    <i class="fa-solid fa-shield-virus text-gold-500 text-2xl"></i>
+                    <h3 class="text-2xl font-bold uppercase tracking-wide">Public Incident Intake Form</h3>
+                </div>
+                <p class="text-xs text-slate-400 mb-6">
+                    Notice: Submitting false reports to Internal Affairs is punishable under municipal and state penal codes. All submissions are logged and reviewed by the Command Staff.
+                </p>
+
+                <form id="ia-form" class="space-y-4" onsubmit="handleFormSubmit(event)">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs uppercase font-bold text-slate-300 mb-1">Involved Officer Name / Badge #</label>
+                            <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-gold-500" placeholder="e.g. Deputy John Doe / #4012">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase font-bold text-slate-300 mb-1">Incident Type</label>
+                            <select class="w-full bg-slate-900 border border-slate-700 rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-gold-500">
+                                <option>Discourtesy / Unprofessionalism</option>
+                                <option>Excessive Use of Force</option>
+                                <option>Unlawful Search / Arrest</option>
+                                <option>Neglect of Duty</option>
+                                <option>Commendation / Praise</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs uppercase font-bold text-slate-300 mb-1">Date & Time of Incident</label>
+                            <input type="datetime-local" required class="w-full bg-slate-900 border border-slate-700 rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-gold-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase font-bold text-slate-300 mb-1">Location / Division</label>
+                            <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-gold-500" placeholder="e.g. Central Station / Mission Row">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase font-bold text-slate-300 mb-1">Detailed Narrative</label>
+                        <textarea rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-gold-500" placeholder="Provide a chronological account of events..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-gold-500 hover:bg-gold-600 text-navy-900 font-black tracking-wider uppercase py-3 rounded shadow-md transition">
+                        Submit Official Incident Report
+                    </button>
+                </form>
+
+                <!-- Form Success Banner -->
+                <div id="form-success" class="hidden mt-4 p-4 bg-emerald-900/50 border border-emerald-500 text-emerald-200 rounded text-center text-sm">
+                    <i class="fa-solid fa-circle-check text-xl mb-1 block"></i>
+                    Report successfully filed. Investigation Case tracking number generated.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Roster Lookup -->
+    <section id="roster" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8">
+            <h3 class="text-2xl font-bold uppercase tracking-wider text-slate-100">Command Staff & Investigators</h3>
+            <div class="w-16 h-1 bg-gold-500 mx-auto mt-2 mb-4"></div>
+            <p class="text-sm text-slate-400">Active personnel assigned to Professional Standards Bureau.</p>
+        </div>
+
+        <div class="overflow-x-auto bg-slate-800 border border-slate-700 rounded-lg">
+            <table class="w-full text-left text-sm text-slate-300">
+                <thead class="bg-navy-900 text-gold-500 text-xs uppercase tracking-wider border-b border-slate-700">
+                    <tr>
+                        <th class="py-3 px-4">Callsign / Badge</th>
+                        <th class="py-3 px-4">Name</th>
+                        <th class="py-3 px-4">Rank</th>
+                        <th class="py-3 px-4">Assigned Unit</th>
+                        <th class="py-3 px-4">Status</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-700">
+                    <tr class="hover:bg-slate-700/50">
+                        <td class="py-3 px-4 font-mono text-gold-500">IAG-01</td>
+                        <td class="py-3 px-4 font-semibold text-white">E. Vance</td>
+                        <td class="py-3 px-4">Commander</td>
+                        <td class="py-3 px-4">Commanding Officer</td>
+                        <td class="py-3 px-4"><span class="bg-emerald-900/60 text-emerald-400 px-2 py-0.5 rounded text-xs border border-emerald-600">On Duty</span></td>
+                    </tr>
+                    <tr class="hover:bg-slate-700/50">
+                        <td class="py-3 px-4 font-mono text-gold-500">IAG-04</td>
+                        <td class="py-3 px-4 font-semibold text-white">M. Sterling</td>
+                        <td class="py-3 px-4">Captain III</td>
+                        <td class="py-3 px-4">Criminal Investigation Div.</td>
+                        <td class="py-3 px-4"><span class="bg-emerald-900/60 text-emerald-400 px-2 py-0.5 rounded text-xs border border-emerald-600">On Duty</span></td>
+                    </tr>
+                    <tr class="hover:bg-slate-700/50">
+                        <td class="py-3 px-4 font-mono text-gold-500">IAG-12</td>
+                        <td class="py-3 px-4 font-semibold text-white">R. Hernandez</td>
+                        <td class="py-3 px-4">Detective III</td>
+                        <td class="py-3 px-4">Force Investigation Div.</td>
+                        <td class="py-3 px-4"><span class="bg-slate-700 text-slate-400 px-2 py-0.5 rounded text-xs">Off Duty</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Disciplinary Statistics (Transparency Section) -->
+    <section id="stats" class="py-16 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-lg">
+                    <div class="text-3xl font-black text-gold-500 mb-1">142</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-400">Complaints Processed</div>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-lg">
+                    <div class="text-3xl font-black text-emerald-400 mb-1">88%</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-400">Exonerated / Unfounded</div>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-lg">
+                    <div class="text-3xl font-black text-red-500 mb-1">12%</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-400">Sustained Violations</div>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-lg">
+                    <div class="text-3xl font-black text-blue-400 mb-1">18</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-400">Open Audits</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 border-t border-slate-800 py-8 text-center text-xs text-slate-500">
+        <p class="mb-2">OFFICIAL INTERNAL AFFAIRS BUREAU • ROOK LOS ANGELES ROLEPLAY</p>
+        <p>Modeled after LAPD PSB and LASD IAB protocols. Designed for community oversight and internal tracking.</p>
+    </footer>
+
+    <!-- Form Handler Script -->
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            document.getElementById('ia-form').reset();
+            const successBanner = document.getElementById('form-success');
+            successBanner.classList.remove('hidden');
+            setTimeout(() => {
+                successBanner.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
